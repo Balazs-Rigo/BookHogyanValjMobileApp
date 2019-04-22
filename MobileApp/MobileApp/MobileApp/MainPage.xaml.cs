@@ -22,5 +22,10 @@ namespace MobileApp
         {
             DisplayAlert("Your given content", entry.Text, "close");
         }
+
+        private void PeopleList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+
+        }
     }
 }
