@@ -6,12 +6,12 @@ namespace MobileApp
 {
     class PersonModel : ObservableObject
     {
-        private string _id,
+        private string _id;
 
         public string ID
         {
 
-            get { return _id}
+            get { return _id; }
             set
             {
                 _id = value;
