@@ -17,11 +17,7 @@ namespace MobileApp
         {
             InitializeComponent();
         }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            DisplayAlert("Your given content", entry.Text, "close");
-        }
+             
 
         private void PeopleList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
