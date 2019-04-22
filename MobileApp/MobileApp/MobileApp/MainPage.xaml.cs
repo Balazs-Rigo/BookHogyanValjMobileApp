@@ -20,7 +20,7 @@ namespace MobileApp
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-
+            DisplayAlert("Your given content", entry.Text, "close")
         }
     }
 }
