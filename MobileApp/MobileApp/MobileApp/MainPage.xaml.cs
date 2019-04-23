@@ -13,15 +13,19 @@ namespace MobileApp
     [DesignTimeVisible(true)]
     public partial class MainPage : ContentPage
     {
+        private FormModel Model = new FormModel();
+
         public MainPage()
         {
             InitializeComponent();
+
+            this.BindingContext = Model;
         }
              
 
         private void PeopleList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
+            DisplayAlert("The selected person",peopleList.SelectedItem.ToString(),"Cancel");
         }
     }
 }
