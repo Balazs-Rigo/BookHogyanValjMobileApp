@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MobileApp"
+             x:Class="MobileApp.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        <Label Text="ID:"></Label>
+
+        <Entry x:Name="IdText" Text="{Binding CurrentPerson.ID, Mode=TwoWay}"/>
+
+        <Label Text="Name:"></Label>
+
+        <Entry x:Name="NameText" Text="{Binding CurrentPerson.Name, Mode=TwoWay}"></Entry>
+
+        <Label Text="Age"></Label>
+
+        <Entry x:Name="AgeText" Text="{Binding CurrentPerson.Age, Mode=TwoWay}"></Entry>
+
+        <Button x:Name="button"
+                Text="Add"
+                Command="{Binding AddCommand}"></Button>
+
+        <ListView x:Name="peopleList"
+                 ItemsSource="{Binding People, Mode=OneWay}"
+                 ItemSelected="PeopleList_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding Name}"></Label>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
