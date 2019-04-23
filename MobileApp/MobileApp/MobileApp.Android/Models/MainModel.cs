@@ -10,9 +10,12 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
+
+
 namespace MobileApp.Droid.Models
 {
-    class MainModel
+    class MainModel : ObservableObject
     {
+   
     }
 }

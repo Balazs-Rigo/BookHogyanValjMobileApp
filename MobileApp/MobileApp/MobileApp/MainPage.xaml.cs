@@ -13,7 +13,7 @@ namespace MobileApp
     [DesignTimeVisible(true)]
     public partial class MainPage : ContentPage
     {
-        private FormModel Model = new FormModel();
+        public FormModel Model = new FormModel();
 
         public MainPage()
         {

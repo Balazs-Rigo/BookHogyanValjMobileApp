@@ -63,6 +63,7 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\Version\ApplicationVersionHelper.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Models\Base\ObservableObject.cs" />
     <Compile Include="Models\MainModel.cs" />
